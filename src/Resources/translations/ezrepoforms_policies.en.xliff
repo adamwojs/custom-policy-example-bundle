@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="not.available">
+        <body>
+          <trans-unit id="99e662d7732bbefab5c9af4650e23bef57a4cc4b" resname="policy.limitation.identifier.custom">
+            <source>Custom Limitation</source>
+            <target>Custom Limitation</target>
+            <note>key: policy.limitation_custom</note>
+          </trans-unit>
+        </body>
+    </file>
+</xliff>

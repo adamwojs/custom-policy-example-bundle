@@ -1,0 +1,16 @@
+services:
+    custom_policy_example.limitation.custom_limitation:
+        class: 'AdamWojs\CustomPolicyExampleBundle\Security\CustomPolicy\Limitation\CustomLimitationType'
+        arguments:
+            - 'Custom'
+        tags:
+            - { name: 'ezpublish.limitationType', alias: 'Custom' }
+
+    custom_policy_example.limitation.custom_limitation.mapper:
+        class: 'AdamWojs\CustomPolicyExampleBundle\Security\CustomPolicy\Limitation\Mapper\CustomLimitationMapper'
+        arguments:
+            - 'AdamWojs\CustomPolicyExampleBundle:Limitation:custom_limitation_form.html.twig'
+        tags:
+            - { name: 'ez.limitation.formMapper', limitationType: 'Custom' }
+            - { name: 'ez.limitation.valueMapper', limitationType: 'Custom' }
+
